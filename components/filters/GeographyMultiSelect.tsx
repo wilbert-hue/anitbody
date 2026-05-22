@@ -38,7 +38,8 @@ export function GeographyMultiSelect() {
     const globalItems = geo.global || []
     const regions = geo.regions || []
     const countries = geo.countries || {}
-    const hasHierarchy = regions.length > 0
+    // Also treat a global item as hierarchical when it has child countries
+    const hasHierarchy = regions.length > 0 || globalItems.some(g => (countries[g] || []).length > 0)
     const flatOptions = geo.all_geographies || []
 
     return { globalItems, regions, countries, hasHierarchy, flatOptions }
@@ -205,9 +206,13 @@ export function GeographyMultiSelect() {
             ) : hasHierarchy ? (
               // Hierarchical mode
               <>
-                {/* Global items */}
-                {globalItems.map(geo => renderCheckbox(geo, 0))}
-                {/* Divider */}
+                {/* Global items — render with expand arrow if they have child countries */}
+                {globalItems.map(geo =>
+                  (countries[geo] || []).length > 0
+                    ? renderRegion(geo)
+                    : renderCheckbox(geo, 0)
+                )}
+                {/* Divider between global items and standalone regions */}
                 {globalItems.length > 0 && regions.length > 0 && (
                   <div className="border-t border-gray-200 my-1" />
                 )}

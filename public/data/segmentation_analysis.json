@@ -1,62 +1,56 @@
 {
-  "Global": {
-    "By Type": {
-      "Sub-Normothermic Perfusion (20–34°C)": {},
-      "Warm or Normothermic Perfusion (35–37°C)": {}
+  "India": {
+    "By Molecule": {
+      "Pembrolizumab": {},
+      "Pertuzumab": {},
+      "Ipilimumab": {},
+      "Nivolumab": {},
+      "Daratumumab": {},
+      "Secukinumab": {},
+      "Golimumab": {}
     },
-    "By Organ Type": {
-      "Liver": {},
-      "Heart": {},
-      "Lung": {},
-      "Kidney": {},
-      "Others (Pancreas, Small bowel / Intestine, Composite Tissues / Limb Perfusion (emerging use cases))": {}
+    "By Therapeutic Area": {
+      "Cancer": {
+        "Breast Cancer": {},
+        "Lung Cancer": {},
+        "Melanoma": {},
+        "Head and Neck Cancer": {},
+        "Renal Cell Carcinoma": {},
+        "Urothelial Cancer": {},
+        "Others (Gastrointestinal Cancers, Gynecological Cancers, etc.)": {}
+      },
+      "Non-Cancer / Autoimmune and Inflammatory Disorders": {
+        "Dermatology Disorders": {},
+        "Psoriatic Arthritis": {},
+        "Axial Spondyloarthritis / Ankylosing Spondylitis": {},
+        "Rheumatoid Arthritis": {},
+        "Others (Inflammatory Bowel Disease, et.)": {}
+      }
     },
-    "Application / Use Case": {
-      "Organ Preservation": {},
-      "Viability Assessment": {},
-      "Physiologic Transport": {},
-      "Reconditioning Marginal Organs": {},
-      "Others (Research Use / Protocol development)": {}
+    "By Mechanism of Action": {
+      "PD-1 Inhibitors": {},
+      "CTLA-4 Inhibitor": {},
+      "HER2-directed Monoclonal Antibody": {},
+      "TNF-alpha Inhibitor": {},
+      "Others (IL-17A Inhibitor, CD38-directed Monoclonal Antibody, etc.)": {}
     },
-    "By End User": {
-      "Hospitals & Clinics": {},
-      "Specialty Clinic/Centers": {},
-      "Transplant Centers": {},
-      "Others (Research Institutes/Centers, Organ Procurement Organizations, etc.)": {}
+    "By Route of Administration": {
+      "Intravenous Infusion": {},
+      "Subcutaneous Injection": {}
+    },
+    "By Distribution Channel": {
+      "Hospital Pharmacies": {},
+      "Retail Pharmacies": {},
+      "Online / E-pharmacy Channels": {}
     },
     "By Region": {
-      "North America": {
-        "U.S.": {},
-        "Canada": {}
-      },
-      "Europe": {
-        "U.K.": {},
-        "Germany": {},
-        "Italy": {},
-        "France": {},
-        "Spain": {},
-        "Russia": {},
-        "Rest of Europe": {}
-      },
-      "Asia Pacific": {
-        "China": {},
-        "India": {},
-        "Japan": {},
-        "South Korea": {},
-        "ASEAN": {},
-        "Australia": {},
-        "Rest of Asia Pacific": {}
-      },
-      "Latin America": {
-        "Brazil": {},
-        "Argentina": {},
-        "Mexico": {},
-        "Rest of Latin America": {}
-      },
-      "Middle East & Africa": {
-        "GCC": {},
-        "South Africa": {},
-        "Rest of Middle East & Africa": {}
+      "India": {
+        "North India": {},
+        "South India": {},
+        "East India": {},
+        "West India": {},
+        "Central India": {},
+        "North East India": {}
       }
     }
   }

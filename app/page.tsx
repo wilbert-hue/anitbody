@@ -204,7 +204,7 @@ export default function DashboardPage() {
                 Coherent Dashboard
               </h1>
               <h2 className="text-sm text-black">
-                {dashboardName || 'Global Normothermic Machine Perfusion Market'}
+                {dashboardName || 'India Monoclonal Antibody Market'}
               </h2>
             </div>
           </div>
@@ -212,10 +212,19 @@ export default function DashboardPage() {
         </div>
 
         {/* Global KPI Cards */}
-        <div className="mb-6">
+        <div className="mb-3">
           <GlobalKPICards />
         </div>
 
+        {/* Demo Data Notice */}
+        <div className="mb-6 flex items-start gap-2 px-4 py-3 bg-amber-50 border border-amber-300 rounded-md text-amber-800 text-sm">
+          <svg className="h-4 w-4 mt-0.5 flex-shrink-0 text-amber-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+            <path strokeLinecap="round" strokeLinejoin="round" d="M12 9v2m0 4h.01M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z" />
+          </svg>
+          <span>
+            <strong>NOTE:</strong> All the data in the dashboard is demo data. No real world data is related to this.
+          </span>
+        </div>
 
         <div className="grid grid-cols-12 gap-6">
           {/* Sidebar - Enhanced Filter Panel */}
